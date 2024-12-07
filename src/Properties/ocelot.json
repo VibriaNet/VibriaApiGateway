@@ -12,7 +12,7 @@
             "DownstreamHostAndPorts": [
                 {
                     "Host": "vibriaauthenticationadminapi",
-                    "Port": 5064
+                    "Port": 80
                 }
             ]
         },
@@ -26,9 +26,16 @@
             "DownstreamHostAndPorts": [
                 {
                     "Host": "vibriaauthenticationadminapi",
-                    "Port": 5064
+                    "Port": 80
                 }
-            ]
+            ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "AddHeadersToRequest": {
+                "Authorization": "{Token}"
+            }
         },
         {
             "DownstreamPathTemplate": "/auth/subscriber/{action}",
@@ -42,7 +49,7 @@
             "DownstreamHostAndPorts": [
                 {
                     "Host": "vibriaauthenticationsubscriber",
-                    "Port": 5074
+                    "Port": 80
                 }
             ]
         },
@@ -58,9 +65,16 @@
             "DownstreamHostAndPorts": [
                 {
                     "Host": "vibriaauthenticationsubscriber",
-                    "Port": 5074
+                    "Port": 80
                 }
-            ]
+            ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "AddHeadersToRequest": {
+                "Authorization": "{Token}"
+            }
         },
         {
             "DownstreamPathTemplate": "/admin/user",
@@ -74,7 +88,7 @@
             "DownstreamHostAndPorts": [
                 {
                     "Host": "vibriasmsadminapi",
-                    "Port": 5084
+                    "Port": 80
                 }
             ]
         },
@@ -90,13 +104,12 @@
             "DownstreamHostAndPorts": [
                 {
                     "Host": "vibriasmsadminapi",
-                    "Port": 5084
+                    "Port": 80
                 }
             ]
         }
     ],
     "GlobalConfiguration": {
-        "BaseUrl": "http://localhost"
+        "BaseUrl": "http://localhost:800"
     }
 }
-  

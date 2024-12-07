@@ -2,6 +2,8 @@ using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Serilog;
 using Serilog.Core;
+using src.Config;
+using src.Middleware;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
@@ -35,6 +37,10 @@ try
                 serverUrl: configuration.GetSection("SerilogConfig:SeqUrl").Value!,
                 controlLevelSwitch: levelSwitch);
     });
+    
+    builder.Services.AddJwtAuthentication(configuration);
+
+    builder.Services.Configure<JwtConfig>(configuration.GetSection("JwtConfig"));
 
     // Add Swagger for API Gateway documentation
     builder.Services.AddEndpointsApiExplorer();

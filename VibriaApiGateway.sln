@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VibriaApiGateway", "VibriaApiGateway.csproj", "{459D07A0-E9C1-4066-9CF7-58EF3FA18456}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VibriaApiGateway", "src\VibriaApiGateway.csproj", "{459D07A0-E9C1-4066-9CF7-58EF3FA18456}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
