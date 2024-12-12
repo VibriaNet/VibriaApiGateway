@@ -1,6 +1,0 @@
-@VibriaApiGateway_HostAddress = http://localhost:5051
-
-GET {{VibriaApiGateway_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
