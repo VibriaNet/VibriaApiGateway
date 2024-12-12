@@ -60,6 +60,9 @@ try
         });
     }
 
+    app.UseAuthentication(); 
+    app.UseAuthorization(); 
+
     app.UseOcelot().Wait();
 
     app.Run();

@@ -1,136 +1,247 @@
 {
   "Routes": [
-    {
-      "DownstreamPathTemplate": "/admin/auth/login",
-      "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/admin/auth/login",
-      "UpstreamHttpMethod": ["Post"],
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "authentication-admin-api",
-          "Port": 5064
-        }
-      ],
-      "SwaggerKey": "authentication-admin-api"
-    },
-    {
-      "DownstreamPathTemplate": "/admin/auth/verify-login",
-      "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/admin/auth/verify-login",
-      "UpstreamHttpMethod": ["Post"],
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "authentication-admin-api",
-          "Port": 5064
-        }
-      ],
-      "SwaggerKey": "authentication-admin-api"
-    },
-    {
-      "UpstreamPathTemplate": "/admin/my-privilege",
-      "UpstreamHttpMethod": ["GET"],
-      "DownstreamPathTemplate": "/admin/my-privilege",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "authentication-admin-api",
-          "Port": 5064
-        }
-      ],
-      "SwaggerKey": "authentication-admin-api"
-    },
-    {
-      "DownstreamPathTemplate": "/auth/subscriber/account",
-      "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/auth/subscriber/account",
-      "UpstreamHttpMethod": ["Post"],
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "authentication-subscriber-api",
-          "Port": 5074
-        }
-      ],
-      "SwaggerKey": "authentication-subscriber-api"
-    },
-    {
-      "DownstreamPathTemplate": "/subscriber/channel/{channelType}",
-      "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/subscriber/channel/{channelType}",
-      "UpstreamHttpMethod": ["Post", "Get", "Put"],
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "authentication-subscriber-api",
-          "Port": 5074
-        }
-      ],
-      "SwaggerKey": "authentication-subscriber-api"
-    },
-    {
-      "DownstreamPathTemplate": "/admin/user",
-      "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/admin/user",
-      "UpstreamHttpMethod": ["Post", "Get", "Put"],
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "vibria-sms-admin-api",
-          "Port": 5084
-        }
-      ],
-      "SwaggerKey": "vibria-sms-admin-api"
-    },
-    {
-      "DownstreamPathTemplate": "/admin/network/{resourceType}",
-      "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/admin/network/{resourceType}",
-      "UpstreamHttpMethod": ["Post", "Get", "Put"],
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "vibria-sms-admin-api",
-          "Port": 5084
-        }
-      ],
-      "SwaggerKey": "vibria-sms-admin-api"
-    }
+      {
+          "DownstreamPathTemplate": "/admin/auth/login",
+          "DownstreamScheme": "http",
+          "UpstreamPathTemplate": "/admin/auth/login",
+          "UpstreamHttpMethod": [
+              "Post"
+          ],
+          "DownstreamHostAndPorts": [
+              {
+                  "Host": "authentication-admin-api",
+                  "Port": 5064
+              }
+          ],
+          "SwaggerKey": "authentication-admin-api"
+      },
+      {
+          "DownstreamPathTemplate": "/admin/auth/verify-login",
+          "DownstreamScheme": "http",
+          "UpstreamPathTemplate": "/admin/auth/verify-login",
+          "UpstreamHttpMethod": [
+              "Post"
+          ],
+          "DownstreamHostAndPorts": [
+              {
+                  "Host": "authentication-admin-api",
+                  "Port": 5064
+              }
+          ],
+          "SwaggerKey": "authentication-admin-api"
+      },
+      {
+          "DownstreamPathTemplate": "/admin/auth/logout",
+          "DownstreamScheme": "http",
+          "UpstreamPathTemplate": "/admin/auth/logout",
+          "UpstreamHttpMethod": [
+              "Delete"
+          ],
+          "DownstreamHostAndPorts": [
+              {
+                  "Host": "authentication-admin-api",
+                  "Port": 5064
+              }
+          ],
+          "SwaggerKey": "authentication-admin-api"
+      },
+      {
+          "DownstreamPathTemplate": "/admin/auth/reset-password",
+          "DownstreamScheme": "http",
+          "UpstreamPathTemplate": "/admin/auth/reset-password",
+          "UpstreamHttpMethod": [
+              "Put"
+          ],
+          "DownstreamHostAndPorts": [
+              {
+                  "Host": "authentication-admin-api",
+                  "Port": 5064
+              }
+          ],
+          "SwaggerKey": "authentication-admin-api"
+      },
+      {
+          "UpstreamPathTemplate": "/admin/my-privilege",
+          "UpstreamHttpMethod": [
+              "GET"
+          ],
+          "DownstreamPathTemplate": "/admin/my-privilege",
+          "DownstreamScheme": "http",
+          "DownstreamHostAndPorts": [
+              {
+                  "Host": "authentication-admin-api",
+                  "Port": 5064
+              }
+          ],
+          "SwaggerKey": "authentication-admin-api",
+          "AddHeadersToRequest": {
+              "Authorization": "Bearer {Token}"
+          }
+      },
+      {
+          "DownstreamPathTemplate": "/auth/subscriber/login",
+          "DownstreamScheme": "http",
+          "UpstreamPathTemplate": "/auth/subscriber/login",
+          "UpstreamHttpMethod": [
+              "Post"
+          ],
+          "DownstreamHostAndPorts": [
+              {
+                  "Host": "authentication-subscriber-api",
+                  "Port": 5074
+              }
+          ],
+          "SwaggerKey": "authentication-subscriber-api"
+      },
+      {
+          "DownstreamPathTemplate": "/auth/subscriber/forgotpassword",
+          "DownstreamScheme": "http",
+          "UpstreamPathTemplate": "/auth/subscriber/forgotpassword",
+          "UpstreamHttpMethod": [
+              "Post"
+          ],
+          "DownstreamHostAndPorts": [
+              {
+                  "Host": "authentication-subscriber-api",
+                  "Port": 5074
+              }
+          ],
+          "SwaggerKey": "authentication-subscriber-api"
+      },
+      {
+          "DownstreamPathTemplate": "/auth/subscriber/{account}",
+          "DownstreamScheme": "http",
+          "UpstreamPathTemplate": "/auth/subscriber/{account}",
+          "UpstreamHttpMethod": [
+              "Post",
+              "Get"
+          ],
+          "DownstreamHostAndPorts": [
+              {
+                  "Host": "authentication-subscriber-api",
+                  "Port": 5074
+              }
+          ],
+          "SwaggerKey": "authentication-subscriber-api"
+      },
+      {
+          "DownstreamPathTemplate": "/auth/subscriber/{account}",
+          "DownstreamScheme": "http",
+          "UpstreamPathTemplate": "/auth/subscriber/{account}",
+          "UpstreamHttpMethod": [
+              "Put"
+          ],
+          "DownstreamHostAndPorts": [
+              {
+                  "Host": "authentication-subscriber-api",
+                  "Port": 5074
+              }
+          ],
+          "SwaggerKey": "authentication-subscriber-api",
+          "AddHeadersToRequest": {
+              "Authorization": "Bearer {Token}"
+          }
+      },
+      {
+          "DownstreamPathTemplate": "/auth/subscriber/channel/{channelType}",
+          "DownstreamScheme": "http",
+          "UpstreamPathTemplate": "/auth/subscriber/channel/{channelType}",
+          "UpstreamHttpMethod": [
+              "Post",
+              "Get",
+              "Put"
+          ],
+          "DownstreamHostAndPorts": [
+              {
+                  "Host": "authentication-subscriber-api",
+                  "Port": 5074
+              }
+          ],
+          "SwaggerKey": "authentication-subscriber-api",
+          "AddHeadersToRequest": {
+              "Authorization": "Bearer {Token}"
+          }
+      },
+      {
+          "DownstreamPathTemplate": "/admin/user",
+          "DownstreamScheme": "http",
+          "UpstreamPathTemplate": "/admin/user",
+          "UpstreamHttpMethod": [
+              "Post",
+              "Get",
+              "Put"
+          ],
+          "DownstreamHostAndPorts": [
+              {
+                  "Host": "vibria-sms-admin-api",
+                  "Port": 5084
+              }
+          ],
+          "SwaggerKey": "vibria-sms-admin-api",
+          "AddHeadersToRequest": {
+              "Authorization": "Bearer {Token}"
+          }
+      },
+      {
+          "DownstreamPathTemplate": "/admin/network/{resourceType}",
+          "DownstreamScheme": "http",
+          "UpstreamPathTemplate": "/admin/network/{resourceType}",
+          "UpstreamHttpMethod": [
+              "Post",
+              "Get",
+              "Put"
+          ],
+          "DownstreamHostAndPorts": [
+              {
+                  "Host": "vibria-sms-admin-api",
+                  "Port": 5084
+              }
+          ],
+          "SwaggerKey": "vibria-sms-admin-api",
+          "AddHeadersToRequest": {
+              "Authorization": "Bearer {Token}"
+          }
+      }
   ],
   "SwaggerEndPoints": [
-    {
-      "Key": "authentication-admin-api",
-      "Config": [
-        {
-          "Name": "Vibria Auth Admin API",
-          "Version": "v1",
-          "Url": "http://authentication-admin-api:5064/swagger/v1/swagger.json"
-        }
-      ]
-    },
-    {
-      "Key": "authentication-subscriber-api",
-      "Config": [
-        {
-          "Name": "Vibria Auth Subscriber API",
-          "Version": "v1",
-          "Url": "http://authentication-subscriber-api:5074/swagger/v1/swagger.json"
-        }
-      ]
-    },
-    {
-      "Key": "vibria-sms-admin-api",
-      "Config": [
-        {
-          "Name": "Vibria SMS Admin API",
-          "Version": "v1",
-          "Url": "http://vibria-sms-admin-api:5084/swagger/v1/swagger.json"
-        }
-      ]
-    }
+      {
+          "Key": "authentication-admin-api",
+          "Config": [
+              {
+                  "Name": "Vibria Auth Admin API",
+                  "Version": "v1",
+                  "Url": "http://authentication-admin-api:5064/swagger/v1/swagger.json"
+              }
+          ]
+      },
+      {
+          "Key": "authentication-subscriber-api",
+          "Config": [
+              {
+                  "Name": "Vibria Auth Subscriber API",
+                  "Version": "v1",
+                  "Url": "http://authentication-subscriber-api:5074/swagger/v1/swagger.json"
+              }
+          ]
+      },
+      {
+          "Key": "vibria-sms-admin-api",
+          "Config": [
+              {
+                  "Name": "Vibria SMS Admin API",
+                  "Version": "v1",
+                  "Url": "http://vibria-sms-admin-api:5084/swagger/v1/swagger.json"
+              }
+          ]
+      }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:80"
+      "BaseUrl": "http://localhost:80"
   },
   "HttpHandlerOptions": {
-    "AllowAutoRedirect": true,
-    "UseCookieContainer": true,
-    "UseTracing": true,
-    "UseProxy": true
+      "AllowAutoRedirect": true,
+      "UseCookieContainer": true,
+      "UseTracing": true,
+      "UseProxy": true
   }
 }
