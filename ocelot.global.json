@@ -79,6 +79,21 @@
             }
         },
         {
+            "DownstreamPathTemplate": "/admin/auth/change-password",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/admin/auth/change-password",
+            "UpstreamHttpMethod": [
+                "Put"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "authentication-admin-api",
+                    "Port": 5064
+                }
+            ],
+            "SwaggerKey": "authentication-admin-api"
+        },
+        {
             "DownstreamPathTemplate": "/auth/subscriber/login",
             "DownstreamScheme": "http",
             "UpstreamPathTemplate": "/auth/subscriber/login",
