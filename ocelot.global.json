@@ -94,6 +94,7 @@
             "SwaggerKey": "authentication-admin-api"
         },
         {
+
             "DownstreamPathTemplate": "/auth/subscriber/login",
             "DownstreamScheme": "http",
             "UpstreamPathTemplate": "/auth/subscriber/login",
