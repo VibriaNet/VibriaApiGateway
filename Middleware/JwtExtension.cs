@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using src.Config;
+using Serilog;
 
 namespace src.Middleware
 {
@@ -46,8 +47,8 @@ namespace src.Middleware
                     OnAuthenticationFailed = context =>
                     {
                         using var scope = context.HttpContext.RequestServices.CreateScope();
-                        var logger = scope.ServiceProvider.GetRequiredService<ILogger>();
-                        logger.LogError(context.Exception, "Error occurred OnAuthenticationFailed, {Message}", context.Exception.Message);
+                        var logger = scope.ServiceProvider.GetRequiredService<Serilog.ILogger>();
+                        logger.Error(context.Exception, "Error occurred OnAuthenticationFailed, {Message}", context.Exception.Message);
 
                         var response = new { Message = "Authentication failed" };
 
