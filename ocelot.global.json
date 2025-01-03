@@ -885,7 +885,89 @@
             "AddHeadersToRequest": {
                 "Authorization": "Bearer {Token}"
             }
+        },
+        {
+            "DownstreamPathTemplate": "/api/subscriber/address-book",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/api/subscriber/address-book",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-subscriber-api",
+                    "Port": 5062
+                }
+            ],
+            "SwaggerKey": "vibria-sms-subscriber-api"
+        },
+        {
+            "DownstreamPathTemplate": "/api/subscriber/address-book",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/api/subscriber/address-book",
+            "UpstreamHttpMethod": [
+                "POST"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-subscriber-api",
+                    "Port": 5062
+                }
+            ],
+            "SwaggerKey": "vibria-sms-subscriber-api"
+        },
+        {
+            "DownstreamPathTemplate": "/api/subscriber/address-book",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/api/subscriber/address-book",
+            "UpstreamHttpMethod": [
+                "PUT"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-subscriber-api",
+                    "Port": 5062
+                }
+            ],
+            "SwaggerKey": "vibria-sms-subscriber-api"
+        },
+        {
+            "DownstreamPathTemplate": "/api/subscriber/broadcast",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/api/subscriber/broadcast",
+            "UpstreamHttpMethod": [
+                "Post"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-subscriber-api",
+                    "Port": 5062
+                }
+            ],
+            "SwaggerKey": "vibria-sms-subscriber-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/api/subscriber/broadcast/message",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/api/subscriber/broadcast/message",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-subscriber-api",
+                    "Port": 5062
+                }
+            ],
+            "SwaggerKey": "vibria-sms-subscriber-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
         }
+
     ],
     "SwaggerEndPoints": [
         {
@@ -927,6 +1009,34 @@
                     "Url": "http://vibria-sms-provider-api:5261/swagger/v1/swagger.json"
                 }
             ]
+        },
+        {
+            "Key": "vibria-sms-subscriber-api",
+            "Config": [
+                {
+                    "Name": "Vibria SMS Subscriberr API",
+                    "Version": "v1",
+                    "Url": "http://vibria-sms-subscriber-api:5062/swagger/v1/swagger.json"
+                }
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/provider/smsc-code",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/api/provider/smsc-code",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-provider-api",
+                    "Port": 5261
+                }
+            ],
+            "SwaggerKey": "vibria-sms-provider-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
         }
     ],
     "GlobalConfiguration": {
