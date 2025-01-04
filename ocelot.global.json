@@ -786,24 +786,6 @@
                     "Url": "http://vibria-sms-subscriber-api:5062/swagger/v1/swagger.json"
                 }
             ]
-        },
-        {
-            "DownstreamPathTemplate": "/api/provider/smsc-code",
-            "DownstreamScheme": "http",
-            "UpstreamPathTemplate": "/api/provider/smsc-code",
-            "UpstreamHttpMethod": [
-                "Get"
-            ],
-            "DownstreamHostAndPorts": [
-                {
-                    "Host": "vibria-sms-provider-api",
-                    "Port": 5261
-                }
-            ],
-            "SwaggerKey": "vibria-sms-provider-api",
-            "AddHeadersToRequest": {
-                "Authorization": "Bearer {Token}"
-            }
         }
     ],
     "GlobalConfiguration": {
