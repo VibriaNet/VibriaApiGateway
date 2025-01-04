@@ -899,7 +899,11 @@
                     "Port": 5062
                 }
             ],
-            "SwaggerKey": "vibria-sms-subscriber-api"
+            "SwaggerKey": "vibria-sms-subscriber-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
+            
         },
         {
             "DownstreamPathTemplate": "/api/subscriber/address-book",
@@ -914,7 +918,10 @@
                     "Port": 5062
                 }
             ],
-            "SwaggerKey": "vibria-sms-subscriber-api"
+            "SwaggerKey": "vibria-sms-subscriber-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
         },
         {
             "DownstreamPathTemplate": "/api/subscriber/address-book",
@@ -929,7 +936,10 @@
                     "Port": 5062
                 }
             ],
-            "SwaggerKey": "vibria-sms-subscriber-api"
+            "SwaggerKey": "vibria-sms-subscriber-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
         },
         {
             "DownstreamPathTemplate": "/api/subscriber/broadcast",
