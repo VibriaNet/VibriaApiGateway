@@ -94,7 +94,6 @@
             "SwaggerKey": "authentication-admin-api"
         },
         {
-
             "DownstreamPathTemplate": "/auth/subscriber/login",
             "DownstreamScheme": "http",
             "UpstreamPathTemplate": "/auth/subscriber/login",
@@ -464,6 +463,150 @@
             }
         },
         {
+            "DownstreamPathTemplate": "/admin/subscriber-mgt/subscriber",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/admin/subscriber-mgt/subscriber",
+            "UpstreamHttpMethod": [
+                "Post"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
+                }
+            ],
+            "SwaggerKey": "vibria-sms-admin-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/admin/subscriber-mgt/subscribers",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/admin/subscriber-mgt/subscribers",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
+                }
+            ],
+            "SwaggerKey": "vibria-sms-admin-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/admin/subscriber-mgt/channel",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/admin/subscriber-mgt/channel",
+            "UpstreamHttpMethod": [
+                "Post"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
+                }
+            ],
+            "SwaggerKey": "vibria-sms-admin-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/admin/subscriber-mgt/senderId",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/admin/subscriber-mgt/senderId",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
+                }
+            ],
+            "SwaggerKey": "vibria-sms-admin-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/admin/subscriber-mgt/senderId",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/admin/subscriber-mgt/senderId",
+            "UpstreamHttpMethod": [
+                "Put"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
+                }
+            ],
+            "SwaggerKey": "vibria-sms-admin-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/admin/subscriber-mgt/subscriber-detail",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/admin/subscriber-mgt/subscriber-detail",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
+                }
+            ],
+            "SwaggerKey": "vibria-sms-admin-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/admin/subscriber-mgt/pricing",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/admin/subscriber-mgt/pricing",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
+                }
+            ],
+            "SwaggerKey": "vibria-sms-admin-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/admin/subscriber-mgt/pricing",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/admin/subscriber-mgt/pricing",
+            "UpstreamHttpMethod": [
+                "Put"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
+                }
+            ],
+            "SwaggerKey": "vibria-sms-admin-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
+        },
+        {
             "DownstreamPathTemplate": "/api/provider",
             "DownstreamScheme": "http",
             "UpstreamPathTemplate": "/api/provider",
@@ -660,7 +803,6 @@
             "AddHeadersToRequest": {
                 "Authorization": "Bearer {Token}"
             }
-            
         },
         {
             "DownstreamPathTemplate": "/api/subscriber/address-book",
@@ -806,7 +948,6 @@
                 "Authorization": "Bearer {Token}"
             }
         }
-
     ],
     "SwaggerEndPoints": [
         {
