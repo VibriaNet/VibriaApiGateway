@@ -931,6 +931,78 @@
             }
         },
         {
+            "DownstreamPathTemplate": "/vibria-net/api/v1/my-balance",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/vibria-net/api/v1/my-balance",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-subscriber-api",
+                    "Port": 5062
+                }
+            ],
+            "SwaggerKey": "vibria-sms-subscriber-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/vibria-net/api/v1/sms-status",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/vibria-net/api/v1/sms-status",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-subscriber-api",
+                    "Port": 5062
+                }
+            ],
+            "SwaggerKey": "vibria-sms-subscriber-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/vibria-net/api/v1/send-sms",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/vibria-net/api/v1/send-sms",
+            "UpstreamHttpMethod": [
+                "Post"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-subscriber-api",
+                    "Port": 5062
+                }
+            ],
+            "SwaggerKey": "vibria-sms-subscriber-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/api/subscriber/address-book-number",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/api/subscriber/address-book-number",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-subscriber-api",
+                    "Port": 5062
+                }
+            ],
+            "SwaggerKey": "vibria-sms-subscriber-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
+        },
+        {
             "DownstreamPathTemplate": "/vibria-net/api/v1/sms-status",
             "DownstreamScheme": "http",
             "UpstreamPathTemplate": "/vibria-net/api/v1/sms-status",
