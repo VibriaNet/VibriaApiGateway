@@ -615,11 +615,11 @@
             ],
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "vibria-sms-provider-api",
-                    "Port": 5261
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
                 }
             ],
-            "SwaggerKey": "vibria-sms-provider-api",
+            "SwaggerKey": "vibria-sms-admin-api",
             "AddHeadersToRequest": {
                 "Authorization": "Bearer {Token}"
             }
@@ -633,11 +633,11 @@
             ],
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "vibria-sms-provider-api",
-                    "Port": 5261
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
                 }
             ],
-            "SwaggerKey": "vibria-sms-provider-api",
+            "SwaggerKey": "vibria-sms-admin-api",
             "AddHeadersToRequest": {
                 "Authorization": "Bearer {Token}"
             }
@@ -651,11 +651,11 @@
             ],
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "vibria-sms-provider-api",
-                    "Port": 5261
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
                 }
             ],
-            "SwaggerKey": "vibria-sms-provider-api",
+            "SwaggerKey": "vibria-sms-admin-api",
             "AddHeadersToRequest": {
                 "Authorization": "Bearer {Token}"
             }
@@ -669,11 +669,11 @@
             ],
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "vibria-sms-provider-api",
-                    "Port": 5261
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
                 }
             ],
-            "SwaggerKey": "vibria-sms-provider-api",
+            "SwaggerKey": "vibria-sms-admin-api",
             "AddHeadersToRequest": {
                 "Authorization": "Bearer {Token}"
             }
@@ -687,11 +687,11 @@
             ],
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "vibria-sms-provider-api",
-                    "Port": 5261
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
                 }
             ],
-            "SwaggerKey": "vibria-sms-provider-api",
+            "SwaggerKey": "vibria-sms-admin-api",
             "AddHeadersToRequest": {
                 "Authorization": "Bearer {Token}"
             }
@@ -705,11 +705,11 @@
             ],
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "vibria-sms-provider-api",
-                    "Port": 5261
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
                 }
             ],
-            "SwaggerKey": "vibria-sms-provider-api",
+            "SwaggerKey": "vibria-sms-admin-api",
             "AddHeadersToRequest": {
                 "Authorization": "Bearer {Token}"
             }
@@ -723,11 +723,11 @@
             ],
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "vibria-sms-provider-api",
-                    "Port": 5261
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
                 }
             ],
-            "SwaggerKey": "vibria-sms-provider-api",
+            "SwaggerKey": "vibria-sms-admin-api",
             "AddHeadersToRequest": {
                 "Authorization": "Bearer {Token}"
             }
@@ -741,11 +741,11 @@
             ],
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "vibria-sms-provider-api",
-                    "Port": 5261
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
                 }
             ],
-            "SwaggerKey": "vibria-sms-provider-api",
+            "SwaggerKey": "vibria-sms-admin-api",
             "AddHeadersToRequest": {
                 "Authorization": "Bearer {Token}"
             }
@@ -759,11 +759,11 @@
             ],
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "vibria-sms-provider-api",
-                    "Port": 5261
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
                 }
             ],
-            "SwaggerKey": "vibria-sms-provider-api",
+            "SwaggerKey": "vibria-sms-admin-api",
             "AddHeadersToRequest": {
                 "Authorization": "Bearer {Token}"
             }
@@ -777,11 +777,11 @@
             ],
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "vibria-sms-provider-api",
-                    "Port": 5261
+                    "Host": "vibria-sms-admin-api",
+                    "Port": 5084
                 }
             ],
-            "SwaggerKey": "vibria-sms-provider-api",
+            "SwaggerKey": "vibria-sms-admin-api",
             "AddHeadersToRequest": {
                 "Authorization": "Bearer {Token}"
             }
@@ -1003,24 +1003,6 @@
             }
         },
         {
-            "DownstreamPathTemplate": "/vibria-net/api/v1/send-sms",
-            "DownstreamScheme": "http",
-            "UpstreamPathTemplate": "/vibria-net/api/v1/send-sms",
-            "UpstreamHttpMethod": [
-                "Post"
-            ],
-            "DownstreamHostAndPorts": [
-                {
-                    "Host": "vibria-sms-subscriber-api",
-                    "Port": 5062
-                }
-            ],
-            "SwaggerKey": "vibria-sms-subscriber-api",
-            "AddHeadersToRequest": {
-                "Authorization": "Bearer {Token}"
-            }
-        },
-        {
             "DownstreamPathTemplate": "/api/subscriber/broadcast",
             "DownstreamScheme": "http",
             "UpstreamPathTemplate": "/api/subscriber/broadcast",
@@ -1042,6 +1024,60 @@
             "DownstreamPathTemplate": "/api/subscriber/broadcast/message",
             "DownstreamScheme": "http",
             "UpstreamPathTemplate": "/api/subscriber/broadcast/message",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-subscriber-api",
+                    "Port": 5062
+                }
+            ],
+            "SwaggerKey": "vibria-sms-subscriber-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/vibria-net/api/v1/subscriber-network",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/vibria-net/api/v1/subscriber-network",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-subscriber-api",
+                    "Port": 5062
+                }
+            ],
+            "SwaggerKey": "vibria-sms-subscriber-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/vibria-net/api/v1/payment",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/vibria-net/api/v1/payment",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vibria-sms-subscriber-api",
+                    "Port": 5062
+                }
+            ],
+            "SwaggerKey": "vibria-sms-subscriber-api",
+            "AddHeadersToRequest": {
+                "Authorization": "Bearer {Token}"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/vibria-net/api/v1/dashboard",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/vibria-net/api/v1/dashboard",
             "UpstreamHttpMethod": [
                 "Get"
             ],
@@ -1085,16 +1121,6 @@
                     "Name": "Vibria SMS Admin API",
                     "Version": "v1",
                     "Url": "http://vibria-sms-admin-api:5084/swagger/v1/swagger.json"
-                }
-            ]
-        },
-        {
-            "Key": "vibria-sms-provider-api",
-            "Config": [
-                {
-                    "Name": "Vibria SMS Provider API",
-                    "Version": "v1",
-                    "Url": "http://vibria-sms-provider-api:5261/swagger/v1/swagger.json"
                 }
             ]
         },
