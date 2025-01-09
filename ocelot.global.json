@@ -94,6 +94,21 @@
             "SwaggerKey": "authentication-admin-api"
         },
         {
+            "DownstreamPathTemplate": "/admin/auth/default-account",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/admin/auth/default-account",
+            "UpstreamHttpMethod": [
+                "POST"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "authentication-admin-api",
+                    "Port": 5064
+                }
+            ],
+            "SwaggerKey": "authentication-admin-api"
+        },
+        {
           "DownstreamPathTemplate": "/admin/subscriber-mgt/network-route",
           "DownstreamScheme": "http",
           "UpstreamPathTemplate": "/admin/subscriber-mgt/network-route",
