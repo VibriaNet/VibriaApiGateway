@@ -82,6 +82,19 @@
       "SwaggerKey": "authentication-admin-api"
     },
     {
+      "DownstreamPathTemplate": "/admin/auth/default-account",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/auth/default-account",
+      "UpstreamHttpMethod": ["POST"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authentication-admin-api",
+          "Port": 5064
+        }
+      ],
+      "SwaggerKey": "authentication-admin-api"
+    },
+    {
       "DownstreamPathTemplate": "/admin/subscriber-mgt/network-route",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/network-route",
@@ -569,6 +582,22 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/admin/subscriber-mgt/subscriber-detail",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/subscriber-mgt/subscriber-detail",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/admin/subscriber-mgt/pricing",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/pricing",
@@ -925,22 +954,6 @@
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/vibria-net/api/v1/send-sms",
       "UpstreamHttpMethod": ["Post"],
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "vibria-sms-subscriber-api",
-          "Port": 5062
-        }
-      ],
-      "SwaggerKey": "vibria-sms-subscriber-api",
-      "AddHeadersToRequest": {
-        "Authorization": "Bearer {Token}"
-      }
-    },
-    {
-      "DownstreamPathTemplate": "/api/subscriber/address-book-number",
-      "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/api/subscriber/address-book-number",
-      "UpstreamHttpMethod": ["Get"],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api",
