@@ -1124,6 +1124,70 @@
       "AddHeadersToRequest": {
         "Authorization": "Bearer {Token}"
       }
+    },
+    {
+      "DownstreamPathTemplate": "/api/subscriber/ported-no",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/ported-no",
+      "UpstreamHttpMethod": ["Post"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/subscriber/ported-no",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/ported-no",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/subscriber/network",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/network",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/subscriber/privilege",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/privilege",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
     }
   ],
   "SwaggerEndPoints": [
