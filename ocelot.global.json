@@ -502,6 +502,19 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/admin/subscriber-mgt/channel",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/subscriber-mgt/channel",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api"
+    },
+    {
       "DownstreamPathTemplate": "/admin/subscriber-mgt/senderId",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/senderId",
