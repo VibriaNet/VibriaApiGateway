@@ -140,6 +140,19 @@
       "SwaggerKey": "authentication-subscriber-api"
     },
     {
+      "DownstreamPathTemplate": "/auth/subscriber/logout",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/auth/subscriber/logout",
+      "UpstreamHttpMethod": ["Delete"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authentication-subscriber-api",
+          "Port": 5074
+        }
+      ],
+      "SwaggerKey": "authentication-subscriber-api"
+    },
+    {
       "DownstreamPathTemplate": "/auth/subscriber/forgotpassword",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/auth/subscriber/forgotpassword",
