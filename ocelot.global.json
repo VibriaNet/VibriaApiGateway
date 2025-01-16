@@ -1120,9 +1120,9 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/vibria-net/api/v1/payment",
+      "DownstreamPathTemplate": "/api/subscriber/payment",
       "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/vibria-net/api/v1/payment",
+      "UpstreamPathTemplate": "/api/subscriber/payment",
       "UpstreamHttpMethod": ["Get"],
       "DownstreamHostAndPorts": [
         {
