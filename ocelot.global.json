@@ -95,6 +95,22 @@
       "SwaggerKey": "authentication-admin-api"
     },
     {
+      "DownstreamPathTemplate": "/admin/auth/refresh-token",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/auth/refresh-token",
+      "UpstreamHttpMethod": ["Post"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authentication-admin-api",
+          "Port": 5064
+        }
+      ],
+      "SwaggerKey": "authentication-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/admin/subscriber-mgt/network-route",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/network-route",
@@ -177,6 +193,22 @@
         }
       ],
       "SwaggerKey": "authentication-subscriber-api"
+    },
+    {
+      "DownstreamPathTemplate": "/auth/subscriber/refresh-token",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/auth/subscriber/refresh-token",
+      "UpstreamHttpMethod": ["Post"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authentication-subscriber-api",
+          "Port": 5074
+        }
+      ],
+      "SwaggerKey": "authentication-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
     },
     {
       "DownstreamPathTemplate": "/admin/user",
