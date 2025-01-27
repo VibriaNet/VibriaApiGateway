@@ -307,6 +307,22 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/admin/network/country/{CountryCode}",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/network/country/{CountryCode}",
+      "UpstreamHttpMethod": ["Delete"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/admin/network/mobile-network-ref",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/mobile-network-ref",
@@ -403,6 +419,22 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/admin/network/network-prefix/{MobileNetworkPrefixId}",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/network/network-prefix/{MobileNetworkPrefixId}",
+      "UpstreamHttpMethod": ["Delete"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/admin/network/ported-number",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/ported-number",
@@ -439,6 +471,22 @@
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/ported-number",
       "UpstreamHttpMethod": ["Put"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/admin/network/ported-number/{PortedNumberId}",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/network/ported-number/{PortedNumberId}",
+      "UpstreamHttpMethod": ["Delete"],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api",
@@ -708,6 +756,22 @@
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/pricing",
       "UpstreamHttpMethod": ["Put"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/admin/subscriber-mgt/vat",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/subscriber-mgt/vat",
+      "UpstreamHttpMethod": ["Get"],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api",
