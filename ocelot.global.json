@@ -211,6 +211,54 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/api/subscriber/account",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/account",
+      "UpstreamHttpMethod": ["Post"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authentication-subscriber-api",
+          "Port": 5074
+        }
+      ],
+      "SwaggerKey": "authentication-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/subscriber/account",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/account",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authentication-subscriber-api",
+          "Port": 5074
+        }
+      ],
+      "SwaggerKey": "authentication-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/subscriber/account",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/account",
+      "UpstreamHttpMethod": ["Put"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authentication-subscriber-api",
+          "Port": 5074
+        }
+      ],
+      "SwaggerKey": "authentication-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/admin/user",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/user",
