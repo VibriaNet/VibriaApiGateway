@@ -217,11 +217,11 @@
       "UpstreamHttpMethod": ["Post"],
       "DownstreamHostAndPorts": [
         {
-          "Host": "authentication-subscriber-api",
-          "Port": 5074
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
         }
       ],
-      "SwaggerKey": "authentication-subscriber-api",
+      "SwaggerKey": "vibria-sms-admin-api",
       "AddHeadersToRequest": {
         "Authorization": "Bearer {Token}"
       }
@@ -233,11 +233,11 @@
       "UpstreamHttpMethod": ["Get"],
       "DownstreamHostAndPorts": [
         {
-          "Host": "authentication-subscriber-api",
-          "Port": 5074
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
         }
       ],
-      "SwaggerKey": "authentication-subscriber-api",
+      "SwaggerKey": "vibria-sms-admin-api",
       "AddHeadersToRequest": {
         "Authorization": "Bearer {Token}"
       }
@@ -249,11 +249,11 @@
       "UpstreamHttpMethod": ["Put"],
       "DownstreamHostAndPorts": [
         {
-          "Host": "authentication-subscriber-api",
-          "Port": 5074
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
         }
       ],
-      "SwaggerKey": "authentication-subscriber-api",
+      "SwaggerKey": "vibria-sms-admin-api",
       "AddHeadersToRequest": {
         "Authorization": "Bearer {Token}"
       }
