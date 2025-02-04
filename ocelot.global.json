@@ -211,6 +211,38 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/auth/subscriber/change-password",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/auth/subscriber/change-password",
+      "UpstreamHttpMethod": ["Put"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authentication-subscriber-api",
+          "Port": 5074
+        }
+      ],
+      "SwaggerKey": "authentication-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/auth/subscriber/reset-password",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/auth/subscriber/reset-password",
+      "UpstreamHttpMethod": ["Put"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authentication-subscriber-api",
+          "Port": 5074
+        }
+      ],
+      "SwaggerKey": "authentication-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/admin/user",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/user",
@@ -1344,9 +1376,9 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/subscriber/privilege",
+      "DownstreamPathTemplate": "/api/subscriber/my-roles",
       "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/api/subscriber/privilege",
+      "UpstreamPathTemplate": "/api/subscriber/my-roles",
       "UpstreamHttpMethod": ["Get"],
       "DownstreamHostAndPorts": [
         {
