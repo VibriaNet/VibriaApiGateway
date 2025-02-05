@@ -1467,6 +1467,22 @@
       "AddHeadersToRequest": {
         "Authorization": "Bearer {Token}"
       }
+    },
+    {
+      "DownstreamPathTemplate": "/api/subscriber/audit-logs",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/audit-logs",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
     }
   ],
   "SwaggerEndPoints": [
