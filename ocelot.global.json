@@ -1072,9 +1072,9 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/provider/smsc-by-traffic-type",
+      "DownstreamPathTemplate": "/admin/subscriber-mgt/smsc-by-traffic-type",
       "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/api/provider/smsc-by-traffic-type",
+      "UpstreamPathTemplate": "/admin/subscriber-mgt/smsc-by-traffic-type",
       "UpstreamHttpMethod": ["Get"],
       "DownstreamHostAndPorts": [
         {
@@ -1104,9 +1104,9 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/provider/traffic-type-under-route",
+      "DownstreamPathTemplate": "/admin/subscriber-mgt/traffic-type-under-route",
       "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/api/provider/traffic-type-under-route",
+      "UpstreamPathTemplate": "/admin/subscriber-mgt/traffic-type-under-route",
       "UpstreamHttpMethod": ["Get"],
       "DownstreamHostAndPorts": [
         {
@@ -1120,9 +1120,9 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/admin/provider/update-network-route-quota",
+      "DownstreamPathTemplate": "/admin/subscriber-mgt/update-network-route-quota",
       "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/admin/provider/update-network-route-quota",
+      "UpstreamPathTemplate": "/admin/subscriber-mgt/update-network-route-quota",
       "UpstreamHttpMethod": ["Put"],
       "DownstreamHostAndPorts": [
         {
@@ -1152,9 +1152,9 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/provider/subscriber-details",
+      "DownstreamPathTemplate": "/admin/subscriber-mgt/subscriber-details",
       "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/api/provider/subscriber-details",
+      "UpstreamPathTemplate": "/admin/subscriber-mgt/subscriber-details",
       "UpstreamHttpMethod": ["Put"],
       "DownstreamHostAndPorts": [
         {
