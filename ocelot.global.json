@@ -1168,6 +1168,54 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/api/provider/active-smsc-quota",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/provider/active-smsc-quota",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/admin/subscriber-mgt/sub-details-perc-quota",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/subscriber-mgt/sub-details-perc-quota",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/v2/admin/subscriber-mgt/update-network-route-quota",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/v2/admin/subscriber-mgt/update-network-route-quota",
+      "UpstreamHttpMethod": ["Put"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/api/subscriber/address-book",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/address-book",
