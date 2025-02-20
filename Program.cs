@@ -44,7 +44,7 @@ try
                 controlLevelSwitch: levelSwitch);
     });
     builder.Services.AddLogging();
-    builder.Services.AddJwtAuthentication(configuration);
+    //builder.Services.AddJwtAuthentication(configuration);
     builder.Services.Configure<JwtConfig>(configuration.GetSection("JwtConfig"));
 
     // Add Swagger for API Gateway documentation
