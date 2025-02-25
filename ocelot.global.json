@@ -1723,22 +1723,6 @@
       "AddHeadersToRequest": {
         "Authorization": "Bearer {Token}"
       }
-    },
-    {
-      "DownstreamPathTemplate": "/api/subscriber/sales/subscriber-summaries",
-      "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/api/subscriber/sales/subscriber-summaries",
-      "UpstreamHttpMethod": ["Get"],
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "vibria-sms-subscriber-api",
-          "Port": 5062
-        }
-      ],
-      "SwaggerKey": "vibria-sms-subscriber-api",
-      "AddHeadersToRequest": {
-        "Authorization": "Bearer {Token}"
-      }
     }
   ],
   "SwaggerEndPoints": [
