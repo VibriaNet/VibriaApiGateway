@@ -1342,7 +1342,23 @@
       "AddHeadersToRequest": {
         "Authorization": "Bearer {Token}"
       }
-    },
+    }, 
+    {
+      "DownstreamPathTemplate": "/admin/admin-management/user-role",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/admin-management/user-role",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    }, 
     {
       "DownstreamPathTemplate": "/admin/admin-management/role-privilege",
       "DownstreamScheme": "http",
