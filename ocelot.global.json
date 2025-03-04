@@ -1732,7 +1732,7 @@
         {
           "Name": "Vibria Auth Admin API",
           "Version": "v1",
-          "Url": "http://authentication-admin-api-ax:4064/swagger/v1/swagger.json"
+          "Url": "http://authentication-admin-api-ax:5064/swagger/v1/swagger.json"
         }
       ]
     },
@@ -1742,7 +1742,7 @@
         {
           "Name": "Vibria Auth Subscriber API",
           "Version": "v1",
-          "Url": "http://authentication-subscriber-api-ax:4074/swagger/v1/swagger.json"
+          "Url": "http://authentication-subscriber-api-ax:5074/swagger/v1/swagger.json"
         }
       ]
     },
@@ -1752,7 +1752,7 @@
         {
           "Name": "Vibria SMS Admin API",
           "Version": "v1",
-          "Url": "http://vibria-sms-admin-api-ax:4084/swagger/v1/swagger.json"
+          "Url": "http://vibria-sms-admin-api-ax:5084/swagger/v1/swagger.json"
         }
       ]
     },
@@ -1762,7 +1762,7 @@
         {
           "Name": "Vibria SMS Subscriber API",
           "Version": "v1",
-          "Url": "http://vibria-sms-subscriber-api-ax:4062/swagger/v1/swagger.json"
+          "Url": "http://vibria-sms-subscriber-api-ax:45062/swagger/v1/swagger.json"
         }
       ]
     }
