@@ -798,6 +798,22 @@
       "AddHeadersToRequest": {
         "Authorization": "Bearer {Token}"
       }
+     },
+     {
+      "DownstreamPathTemplate": "/admin/subscriber-mgt/pricing",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/subscriber-mgt/pricing",
+      "UpstreamHttpMethod": ["Post"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
     },
     {
       "DownstreamPathTemplate": "/admin/subscriber-mgt/vat",
