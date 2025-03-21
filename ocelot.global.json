@@ -800,6 +800,22 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/admin/subscriber-mgt/pricing",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/subscriber-mgt/pricing",
+      "UpstreamHttpMethod": ["Post"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api-ax",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api-ax",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/admin/subscriber-mgt/vat",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/vat",
