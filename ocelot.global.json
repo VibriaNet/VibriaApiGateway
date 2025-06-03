@@ -814,6 +814,22 @@
       "AddHeadersToRequest": {
         "Authorization": "Bearer {Token}"
       }
+     },
+     {
+      "DownstreamPathTemplate": "/admin/subscriber-mgt/pricing",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/subscriber-mgt/pricing",
+      "UpstreamHttpMethod": ["Post"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
     },
     {
       "DownstreamPathTemplate": "/admin/subscriber-mgt/vat",
@@ -1403,6 +1419,86 @@
         }
       ],
       "SwaggerKey": "vibria-sms-admin-api-ax",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/admin/expenses",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/expenses",
+      "UpstreamHttpMethod": ["Post"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/admin/expenses",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/expenses",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/admin/expenses",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/expenses",
+      "UpstreamHttpMethod": ["Put"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/admin/reports/expenditure",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/reports/expenditure",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/admin/reports/income-expenditure",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/reports/income-expenditure",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
       "AddHeadersToRequest": {
         "Authorization": "Bearer {Token}"
       }
