@@ -243,6 +243,38 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/auth/subscriber/verify-login",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/auth/subscriber/verify-login",
+      "UpstreamHttpMethod": ["Post"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authentication-subscriber-api",
+          "Port": 5074
+        }
+      ],
+      "SwaggerKey": "authentication-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/auth/subscriber/resend-otp",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/auth/subscriber/resend-otp",
+      "UpstreamHttpMethod": ["Post"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authentication-subscriber-api",
+          "Port": 5074
+        }
+      ],
+      "SwaggerKey": "authentication-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/admin/user",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/user",
