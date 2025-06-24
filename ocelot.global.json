@@ -1728,6 +1728,22 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/api/subscriber/message-schedule",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/message-schedule",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/api/subscriber/subscriber-network",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/subscriber-network",
