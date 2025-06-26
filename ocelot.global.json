@@ -2011,6 +2011,22 @@
       "AddHeadersToRequest": {
         "Authorization": "Bearer {Token}"
       }
+    },
+    {
+      "DownstreamPathTemplate": "/api/subscriber/message-address-book-cost",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/message-address-book-cost",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
     }
   ],
   "SwaggerEndPoints": [
