@@ -14,7 +14,10 @@ try
 {
     var builder = WebApplication.CreateBuilder(args);
     builder.Services.AddEndpointsApiExplorer();
-
+    builder.WebHost.ConfigureKestrel(serverOptions =>
+    {
+        serverOptions.Limits.MaxRequestBodySize = 209715200; // 200 MB
+    });
 
     var basePath = Environment.GetEnvironmentVariable("BASE_PATH") ??
                    builder.Configuration.GetSection("BasePath").Value;
