@@ -13,6 +13,10 @@ Log.Logger = new LoggerConfiguration()
 try
 {
     var builder = WebApplication.CreateBuilder(args);
+    builder.WebHost.ConfigureKestrel(serverOptions =>
+    {
+        serverOptions.Limits.MaxRequestBodySize = 209715200; // 200 MB
+    });
     builder.Services.AddEndpointsApiExplorer();
 
 
