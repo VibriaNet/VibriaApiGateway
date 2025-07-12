@@ -4,7 +4,7 @@
       "DownstreamPathTemplate": "/admin/auth/login",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/auth/login",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -17,7 +17,7 @@
       "DownstreamPathTemplate": "/admin/auth/verify-login",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/auth/verify-login",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -30,7 +30,7 @@
       "DownstreamPathTemplate": "/admin/auth/logout",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/auth/logout",
-      "UpstreamHttpMethod": ["Delete"],
+      "UpstreamHttpMethod": [ "Delete" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -43,7 +43,7 @@
       "DownstreamPathTemplate": "/admin/auth/reset-password",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/auth/reset-password",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -54,7 +54,7 @@
     },
     {
       "UpstreamPathTemplate": "/admin/my-privilege",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/admin/my-privilege",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -72,7 +72,7 @@
       "DownstreamPathTemplate": "/admin/auth/change-password",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/auth/change-password",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -85,7 +85,7 @@
       "DownstreamPathTemplate": "/admin/auth/default-account",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/auth/default-account",
-      "UpstreamHttpMethod": ["POST"],
+      "UpstreamHttpMethod": [ "POST" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -98,7 +98,7 @@
       "DownstreamPathTemplate": "/admin/auth/refresh-token",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/auth/refresh-token",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -114,7 +114,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/network-route",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/network-route",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -130,7 +130,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/network-route",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/network-route",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -146,7 +146,7 @@
       "DownstreamPathTemplate": "/auth/subscriber/login",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/auth/subscriber/login",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -159,7 +159,7 @@
       "DownstreamPathTemplate": "/auth/subscriber/logout",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/auth/subscriber/logout",
-      "UpstreamHttpMethod": ["Delete"],
+      "UpstreamHttpMethod": [ "Delete" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -172,7 +172,7 @@
       "DownstreamPathTemplate": "/auth/subscriber/forgotpassword",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/auth/subscriber/forgotpassword",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -185,7 +185,7 @@
       "DownstreamPathTemplate": "/auth/subscriber/account",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/auth/subscriber/account",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -198,7 +198,7 @@
       "DownstreamPathTemplate": "/auth/subscriber/refresh-token",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/auth/subscriber/refresh-token",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -214,7 +214,7 @@
       "DownstreamPathTemplate": "/auth/subscriber/change-password",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/auth/subscriber/change-password",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -230,7 +230,7 @@
       "DownstreamPathTemplate": "/auth/subscriber/reset-password",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/auth/subscriber/reset-password",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -246,7 +246,7 @@
       "DownstreamPathTemplate": "/auth/subscriber/verify-login",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/auth/subscriber/verify-login",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -262,7 +262,7 @@
       "DownstreamPathTemplate": "/auth/subscriber/resend-otp",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/auth/subscriber/resend-otp",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -278,7 +278,7 @@
       "DownstreamPathTemplate": "/admin/user",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/user",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -294,7 +294,7 @@
       "DownstreamPathTemplate": "/admin/user",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/user",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -310,7 +310,7 @@
       "DownstreamPathTemplate": "/admin/user",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/user",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -326,7 +326,7 @@
       "DownstreamPathTemplate": "/admin/network/country",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/country",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -342,7 +342,7 @@
       "DownstreamPathTemplate": "/admin/network/country",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/country",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -358,7 +358,7 @@
       "DownstreamPathTemplate": "/admin/network/country",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/country",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -374,7 +374,7 @@
       "DownstreamPathTemplate": "/admin/network/country/{CountryCode}",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/country/{CountryCode}",
-      "UpstreamHttpMethod": ["Delete"],
+      "UpstreamHttpMethod": [ "Delete" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -390,7 +390,7 @@
       "DownstreamPathTemplate": "/admin/network/mobile-network-ref",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/mobile-network-ref",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -406,7 +406,7 @@
       "DownstreamPathTemplate": "/admin/network/mobile-network-ref",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/mobile-network-ref",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -422,7 +422,7 @@
       "DownstreamPathTemplate": "/admin/network/mobile-network-ref",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/mobile-network-ref",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -438,7 +438,7 @@
       "DownstreamPathTemplate": "/admin/network/network-prefix",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/network-prefix",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -454,7 +454,7 @@
       "DownstreamPathTemplate": "/admin/network/network-prefix",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/network-prefix",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -470,7 +470,7 @@
       "DownstreamPathTemplate": "/admin/network/network-prefix",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/network-prefix",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -486,7 +486,7 @@
       "DownstreamPathTemplate": "/admin/network/network-prefix/{MobileNetworkPrefixId}",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/network-prefix/{MobileNetworkPrefixId}",
-      "UpstreamHttpMethod": ["Delete"],
+      "UpstreamHttpMethod": [ "Delete" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -502,7 +502,7 @@
       "DownstreamPathTemplate": "/admin/network/ported-number",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/ported-number",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -518,7 +518,7 @@
       "DownstreamPathTemplate": "/admin/network/ported-number",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/ported-number",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -534,7 +534,7 @@
       "DownstreamPathTemplate": "/admin/network/ported-number",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/ported-number",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -550,7 +550,7 @@
       "DownstreamPathTemplate": "/admin/network/ported-number/{PortedNumberId}",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/network/ported-number/{PortedNumberId}",
-      "UpstreamHttpMethod": ["Delete"],
+      "UpstreamHttpMethod": [ "Delete" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -566,7 +566,7 @@
       "DownstreamPathTemplate": "/admin/message",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/message",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -582,7 +582,7 @@
       "DownstreamPathTemplate": "/admin/message",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/message",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -598,7 +598,7 @@
       "DownstreamPathTemplate": "/admin/dashboard",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/dashboard",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -614,7 +614,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/subscriber",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/subscriber",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -630,7 +630,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/subscribers",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/subscribers",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -646,7 +646,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/channel",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/channel",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -662,7 +662,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/channel",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/channel",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -678,7 +678,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/channel",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/channel",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -691,7 +691,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/senderId",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/senderId",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -707,7 +707,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/senderId",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/senderId",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -723,7 +723,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/senderId",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/senderId",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -739,7 +739,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/subscriber-accounts",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/subscriber-accounts",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -755,7 +755,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/payment",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/payment",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -771,7 +771,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/payment",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/payment",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -787,7 +787,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/subscriber-detail",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/subscriber-detail",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -803,7 +803,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/pricing",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/pricing",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -819,7 +819,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/pricing",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/pricing",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -830,12 +830,12 @@
       "AddHeadersToRequest": {
         "Authorization": "Bearer {Token}"
       }
-     },
-     {
+    },
+    {
       "DownstreamPathTemplate": "/admin/subscriber-mgt/pricing",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/pricing",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -851,7 +851,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/vat",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/vat",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -867,7 +867,7 @@
       "DownstreamPathTemplate": "/api/provider",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/provider",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -883,7 +883,7 @@
       "DownstreamPathTemplate": "/api/provider",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/provider",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -899,7 +899,7 @@
       "DownstreamPathTemplate": "/api/provider",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/provider",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -915,7 +915,7 @@
       "DownstreamPathTemplate": "/api/provider/smpp",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/provider/smpp",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -931,7 +931,7 @@
       "DownstreamPathTemplate": "/api/provider/smpp",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/provider/smpp",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -947,7 +947,7 @@
       "DownstreamPathTemplate": "/api/provider/smpp",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/provider/smpp",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -963,7 +963,7 @@
       "DownstreamPathTemplate": "/api/provider/traffic-type",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/provider/traffic-type",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -979,7 +979,7 @@
       "DownstreamPathTemplate": "/api/provider/pricing",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/provider/pricing",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -995,7 +995,7 @@
       "DownstreamPathTemplate": "/api/provider/pricing",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/provider/pricing",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1011,7 +1011,7 @@
       "DownstreamPathTemplate": "/api/provider/pricing",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/provider/pricing",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1027,7 +1027,7 @@
       "DownstreamPathTemplate": "/api/provider/network-pricing",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/provider/network-pricing",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1043,7 +1043,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/smpp-user",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/smpp-user",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1059,7 +1059,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/web-access-user",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/web-access-user",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1075,7 +1075,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/web-api-user",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/web-api-user",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1091,7 +1091,7 @@
       "DownstreamPathTemplate": "/api/provider/smsc-code",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/provider/smsc-code",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1107,7 +1107,7 @@
       "DownstreamPathTemplate": "/admin/micro-service",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/micro-service",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1123,7 +1123,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/smsc-by-traffic-type",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/smsc-by-traffic-type",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1139,7 +1139,7 @@
       "DownstreamPathTemplate": "/api/provider/smsc-quota",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/provider/smsc-quota",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1155,7 +1155,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/traffic-type-under-route",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/traffic-type-under-route",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1171,7 +1171,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/update-network-route-quota",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/update-network-route-quota",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1187,7 +1187,7 @@
       "DownstreamPathTemplate": "/admin/provider/upsert-smsc-route-quota",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/provider/upsert-smsc-route-quota",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1203,7 +1203,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/subscriber-details",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/subscriber-details",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1219,7 +1219,7 @@
       "DownstreamPathTemplate": "/api/provider/active-smsc-quota",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/provider/active-smsc-quota",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1235,7 +1235,7 @@
       "DownstreamPathTemplate": "/admin/subscriber-mgt/sub-details-perc-quota",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/subscriber-mgt/sub-details-perc-quota",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1251,7 +1251,7 @@
       "DownstreamPathTemplate": "/v2/admin/subscriber-mgt/update-network-route-quota",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/v2/admin/subscriber-mgt/update-network-route-quota",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1267,7 +1267,7 @@
       "DownstreamPathTemplate": "/admin/sales/message-summaries",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/sales/message-summaries",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1283,7 +1283,7 @@
       "DownstreamPathTemplate": "/admin/sales/network-summaries",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/sales/network-summaries",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1299,7 +1299,7 @@
       "DownstreamPathTemplate": "/admin/sales/provider-summaries",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/sales/provider-summaries",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1315,7 +1315,7 @@
       "DownstreamPathTemplate": "/admin/sales/subscriber-summaries",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/sales/subscriber-summaries",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1331,7 +1331,7 @@
       "DownstreamPathTemplate": "/admin/admin-management/role-privilege",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/admin-management/role-privilege",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1347,7 +1347,7 @@
       "DownstreamPathTemplate": "/admin/admin-management/privilege",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/admin-management/privilege",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1363,7 +1363,7 @@
       "DownstreamPathTemplate": "/admin/admin-management/v2/user-role-privilege",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/admin-management/v2/user-role-privilege",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1379,7 +1379,7 @@
       "DownstreamPathTemplate": "/admin/admin-management/user-role-privilege",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/admin-management/user-role-privilege",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1390,12 +1390,12 @@
       "AddHeadersToRequest": {
         "Authorization": "Bearer {Token}"
       }
-    }, 
+    },
     {
       "DownstreamPathTemplate": "/admin/admin-management/user-role",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/admin-management/user-role",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1406,12 +1406,12 @@
       "AddHeadersToRequest": {
         "Authorization": "Bearer {Token}"
       }
-    }, 
+    },
     {
       "DownstreamPathTemplate": "/admin/admin-management/role-privilege",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/admin-management/role-privilege",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1427,7 +1427,7 @@
       "DownstreamPathTemplate": "/admin/admin-management/my-role-privilege",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/admin-management/my-role-privilege",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1443,7 +1443,7 @@
       "DownstreamPathTemplate": "/admin/expenses",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/expenses",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1459,7 +1459,7 @@
       "DownstreamPathTemplate": "/admin/expenses",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/expenses",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1475,7 +1475,7 @@
       "DownstreamPathTemplate": "/admin/expenses",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/expenses",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1491,7 +1491,7 @@
       "DownstreamPathTemplate": "/admin/reports/expenditure",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/reports/expenditure",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1507,7 +1507,7 @@
       "DownstreamPathTemplate": "/admin/reports/income-expenditure",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/reports/income-expenditure",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-admin-api.vibrainet-redtech.svc.cluster.local",
@@ -1523,7 +1523,7 @@
       "DownstreamPathTemplate": "/api/subscriber/address-book",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/address-book",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1539,7 +1539,7 @@
       "DownstreamPathTemplate": "/api/subscriber/address-book",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/address-book",
-      "UpstreamHttpMethod": ["POST"],
+      "UpstreamHttpMethod": [ "POST" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1555,7 +1555,7 @@
       "DownstreamPathTemplate": "/api/subscriber/address-book",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/address-book",
-      "UpstreamHttpMethod": ["PUT"],
+      "UpstreamHttpMethod": [ "PUT" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1571,7 +1571,7 @@
       "DownstreamPathTemplate": "/api/subscriber/address-book",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/address-book",
-      "UpstreamHttpMethod": ["Delete"],
+      "UpstreamHttpMethod": [ "Delete" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1587,7 +1587,7 @@
       "DownstreamPathTemplate": "/api/subscriber/address-book-number",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/address-book-number",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1603,7 +1603,7 @@
       "DownstreamPathTemplate": "/api/subscriber/address-book-number",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/address-book-number",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1619,7 +1619,7 @@
       "DownstreamPathTemplate": "/api/subscriber/address-book-number",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/address-book-number",
-      "UpstreamHttpMethod": ["Delete"],
+      "UpstreamHttpMethod": [ "Delete" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1635,7 +1635,7 @@
       "DownstreamPathTemplate": "/api/subscriber/address-book-number",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/address-book-number",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1651,7 +1651,7 @@
       "DownstreamPathTemplate": "/api/subscriber/address-book-no-failed",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/address-book-no-failed",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1667,7 +1667,7 @@
       "DownstreamPathTemplate": "/api/subscriber/address-book-upload",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/address-book-upload",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1683,7 +1683,7 @@
       "DownstreamPathTemplate": "/vibria-net/api/v1/my-balance",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/vibria-net/api/v1/my-balance",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1699,7 +1699,7 @@
       "DownstreamPathTemplate": "/vibria-net/api/v1/sms-status",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/vibria-net/api/v1/sms-status",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1715,7 +1715,7 @@
       "DownstreamPathTemplate": "/vibria-net/api/v1/send-sms",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/vibria-net/api/v1/send-sms",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1731,7 +1731,7 @@
       "DownstreamPathTemplate": "/api/subscriber/broadcast",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/broadcast",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1747,7 +1747,23 @@
       "DownstreamPathTemplate": "/api/subscriber/broadcast/message",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/broadcast/message",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/subscriber/broadcast/message/download",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/broadcast/message/download",
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1763,7 +1779,7 @@
       "DownstreamPathTemplate": "/api/subscriber/message-schedule",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/message-schedule",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1779,7 +1795,7 @@
       "DownstreamPathTemplate": "/api/subscriber/subscriber-network",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/subscriber-network",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1795,7 +1811,7 @@
       "DownstreamPathTemplate": "/api/subscriber/payment",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/payment",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1811,7 +1827,7 @@
       "DownstreamPathTemplate": "/api/subscriber/dashboard",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/dashboard",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1827,7 +1843,7 @@
       "DownstreamPathTemplate": "/api/subscriber/ported-no",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/ported-no",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1843,7 +1859,7 @@
       "DownstreamPathTemplate": "/api/subscriber/ported-no",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/ported-no",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1859,7 +1875,7 @@
       "DownstreamPathTemplate": "/api/subscriber/network",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/network",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1875,7 +1891,7 @@
       "DownstreamPathTemplate": "/api/subscriber/my-roles",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/my-roles",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1891,7 +1907,7 @@
       "DownstreamPathTemplate": "/api/subscriber/source-address",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/source-address",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1907,7 +1923,7 @@
       "DownstreamPathTemplate": "/api/subscriber/role",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/role",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1920,7 +1936,7 @@
       "DownstreamPathTemplate": "/api/subscriber/account",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/account",
-      "UpstreamHttpMethod": ["Post"],
+      "UpstreamHttpMethod": [ "Post" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1936,7 +1952,7 @@
       "DownstreamPathTemplate": "/api/subscriber/account",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/account",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1952,7 +1968,7 @@
       "DownstreamPathTemplate": "/api/subscriber/account",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/account",
-      "UpstreamHttpMethod": ["Put"],
+      "UpstreamHttpMethod": [ "Put" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1968,7 +1984,7 @@
       "DownstreamPathTemplate": "/api/subscriber/audit-logs",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/audit-logs",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -1984,7 +2000,7 @@
       "DownstreamPathTemplate": "/api/subscriber/sales/message-summaries",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/sales/message-summaries",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -2000,7 +2016,7 @@
       "DownstreamPathTemplate": "/api/subscriber/sales/network-summaries",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/sales/network-summaries",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -2016,7 +2032,7 @@
       "DownstreamPathTemplate": "/api/subscriber/message-address-book-cost",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/message-address-book-cost",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -2032,7 +2048,7 @@
       "DownstreamPathTemplate": "/api/subscriber/cost-center",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/cost-center",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
@@ -2048,7 +2064,7 @@
       "DownstreamPathTemplate": "/api/subscriber/address-book-cost-estimate",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/address-book-cost-estimate",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
