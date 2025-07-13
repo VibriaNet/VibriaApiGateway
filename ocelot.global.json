@@ -1792,6 +1792,22 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/api/subscriber/message-schedule/message/download",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/message-schedule/message/download",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api.vibrainet-redtech.svc.cluster.local",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/api/subscriber/subscriber-network",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/subscriber-network",
