@@ -1,3 +1,5 @@
+using CommonLibrary.Common.Constant;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Serilog;
@@ -36,6 +38,22 @@ try
     builder.Services.AddSwaggerForOcelot(configuration);
 
 
+    var corsBuilder = new CorsPolicyBuilder();
+    if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development")
+    {
+        corsBuilder.AllowAnyOrigin();
+    }
+    // else
+    // {
+    //     corsBuilder.SetIsOriginAllowed(origin =>
+    //         {
+    //             return Uri.TryCreate(origin, UriKind.Absolute, out var uri) && uri.Host.EndsWith(".opendeskng.com", StringComparison.OrdinalIgnoreCase);
+    //         });
+    // }
+    corsBuilder.AllowAnyHeader();
+    corsBuilder.AllowAnyMethod();
+    builder.Services.AddCors(x => x.AddPolicy(Literals.CorsPolicy, corsBuilder.Build()));
+
     builder.Host.UseSerilog((context, loggerConfiguration) =>
     {
         var levelSwitch = new LoggingLevelSwitch();
@@ -53,6 +71,8 @@ try
     // Add Swagger for API Gateway documentation
 
     var app = builder.Build();
+
+    app.UseCors(Literals.CorsPolicy);
 
     if (app.Environment.IsDevelopment())
     {

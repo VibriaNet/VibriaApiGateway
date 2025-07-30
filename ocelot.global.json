@@ -2077,6 +2077,38 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/api/subscriber/auth-types",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/auth-types",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/subscriber/meka-checker",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/meka-checker",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/api/subscriber/address-book-cost-estimate",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/address-book-cost-estimate",
