@@ -2171,7 +2171,23 @@
       "AddHeadersToRequest": {
         "Authorization": "Bearer {Token}"
       }
+    },
+    {
+    "DownstreamPathTemplate": "/api/subscriber/message-schedule-status",
+    "DownstreamScheme": "http",
+    "UpstreamPathTemplate": "/api/subscriber/message-schedule-status",
+    "UpstreamHttpMethod": [ "PUT" ],
+    "DownstreamHostAndPorts": [
+      {
+        "Host": "vibria-sms-subscriber-api",
+        "Port": 5062
+      }
+    ],
+    "SwaggerKey": "vibria-sms-subscriber-api",
+    "AddHeadersToRequest": {
+      "Authorization": "Bearer {Token}"
     }
+  }
   ],
   "SwaggerEndPoints": [
     {
