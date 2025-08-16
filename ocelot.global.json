@@ -1504,6 +1504,38 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/admin/subscriber-mgt/auth-types",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/subscriber-mgt/auth-types",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/admin/subscriber-mgt/meka-checker",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/admin/subscriber-mgt/meka-checker",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-admin-api",
+          "Port": 5084
+        }
+      ],
+      "SwaggerKey": "vibria-sms-admin-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/admin/reports/income-expenditure",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/admin/reports/income-expenditure",
@@ -2077,6 +2109,54 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/api/subscriber/auth-types",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/auth-types",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/subscriber/meka-checker",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/meka-checker",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/subscriber/broadcast/message-for-review",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/broadcast/message-for-review",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/api/subscriber/address-book-cost-estimate",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/address-book-cost-estimate",
@@ -2091,7 +2171,39 @@
       "AddHeadersToRequest": {
         "Authorization": "Bearer {Token}"
       }
+    },
+    {
+    "DownstreamPathTemplate": "/api/subscriber/message-schedule-status",
+    "DownstreamScheme": "http",
+    "UpstreamPathTemplate": "/api/subscriber/message-schedule-status",
+    "UpstreamHttpMethod": [ "PUT" ],
+    "DownstreamHostAndPorts": [
+      {
+        "Host": "vibria-sms-subscriber-api",
+        "Port": 5062
+      }
+    ],
+    "SwaggerKey": "vibria-sms-subscriber-api",
+    "AddHeadersToRequest": {
+      "Authorization": "Bearer {Token}"
     }
+  },
+  {
+    "DownstreamPathTemplate": "/api/subscriber/message-schedule-status/v2",
+    "DownstreamScheme": "http",
+    "UpstreamPathTemplate": "/api/subscriber/message-schedule-status/v2",
+    "UpstreamHttpMethod": [ "PUT" ],
+    "DownstreamHostAndPorts": [
+      {
+        "Host": "vibria-sms-subscriber-api",
+        "Port": 5062
+      }
+    ],
+    "SwaggerKey": "vibria-sms-subscriber-api",
+    "AddHeadersToRequest": {
+      "Authorization": "Bearer {Token}"
+    }
+  }
   ],
   "SwaggerEndPoints": [
     {
