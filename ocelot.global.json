@@ -1728,6 +1728,22 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/vibria-net/api/v1/webhook/dlr",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/vibria-net/api/v1/webhook/dlr",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/vibria-net/api/v1/sms-status",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/vibria-net/api/v1/sms-status",
@@ -2112,7 +2128,7 @@
       "DownstreamPathTemplate": "/api/subscriber/auth-types",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/auth-types",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api",
@@ -2128,7 +2144,7 @@
       "DownstreamPathTemplate": "/api/subscriber/meka-checker",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/meka-checker",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api",
@@ -2144,7 +2160,7 @@
       "DownstreamPathTemplate": "/api/subscriber/broadcast/message-for-review",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/broadcast/message-for-review",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api",
@@ -2173,37 +2189,37 @@
       }
     },
     {
-    "DownstreamPathTemplate": "/api/subscriber/message-schedule-status",
-    "DownstreamScheme": "http",
-    "UpstreamPathTemplate": "/api/subscriber/message-schedule-status",
-    "UpstreamHttpMethod": [ "PUT" ],
-    "DownstreamHostAndPorts": [
-      {
-        "Host": "vibria-sms-subscriber-api",
-        "Port": 5062
+      "DownstreamPathTemplate": "/api/subscriber/message-schedule-status",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/message-schedule-status",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
       }
-    ],
-    "SwaggerKey": "vibria-sms-subscriber-api",
-    "AddHeadersToRequest": {
-      "Authorization": "Bearer {Token}"
-    }
-  },
-  {
-    "DownstreamPathTemplate": "/api/subscriber/message-schedule-status/v2",
-    "DownstreamScheme": "http",
-    "UpstreamPathTemplate": "/api/subscriber/message-schedule-status/v2",
-    "UpstreamHttpMethod": [ "PUT" ],
-    "DownstreamHostAndPorts": [
-      {
-        "Host": "vibria-sms-subscriber-api",
-        "Port": 5062
+    },
+    {
+      "DownstreamPathTemplate": "/api/subscriber/message-schedule-status/v2",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/message-schedule-status/v2",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
       }
-    ],
-    "SwaggerKey": "vibria-sms-subscriber-api",
-    "AddHeadersToRequest": {
-      "Authorization": "Bearer {Token}"
     }
-  }
   ],
   "SwaggerEndPoints": [
     {
