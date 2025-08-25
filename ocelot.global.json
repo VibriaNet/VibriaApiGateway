@@ -1520,9 +1520,9 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/admin/subscriber-mgt/meka-checker",
+      "DownstreamPathTemplate": "/admin/subscriber-mgt/maker-checker",
       "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/admin/subscriber-mgt/meka-checker",
+      "UpstreamPathTemplate": "/admin/subscriber-mgt/maker-checker",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
