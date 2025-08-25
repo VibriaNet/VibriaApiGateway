@@ -2141,10 +2141,10 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/subscriber/meka-checker",
+      "DownstreamPathTemplate": "/api/subscriber/maker-checker",
       "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/api/subscriber/meka-checker",
-      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/api/subscriber/maker-checker",
+      "UpstreamHttpMethod": ["Get"],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api",
