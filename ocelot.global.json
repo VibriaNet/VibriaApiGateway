@@ -2077,6 +2077,22 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/api/subscriber/sales/message-dlr",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/subscriber/sales/message-dlr",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/api/subscriber/sales/network-summaries",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/sales/network-summaries",
@@ -2144,7 +2160,7 @@
       "DownstreamPathTemplate": "/api/subscriber/maker-checker",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/maker-checker",
-      "UpstreamHttpMethod": ["Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "vibria-sms-subscriber-api",
