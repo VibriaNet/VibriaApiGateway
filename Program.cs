@@ -31,6 +31,16 @@ try
             .AddEnvironmentVariables()
             .Build();
 
+    builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("AllowGatewayCors", policy =>
+        {
+            policy
+                .AllowAnyOrigin()      // or .WithOrigins("https://yourdomain.com")
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+    });
 
     builder.Services.AddOcelot(configuration);
     builder.Services.AddSwaggerForOcelot(configuration);
@@ -64,8 +74,8 @@ try
     }
 
     app.UseAuthentication(); 
-    app.UseAuthorization(); 
-
+    app.UseAuthorization();
+    app.UseCors("AllowGatewayCors");
     app.UseOcelot().Wait();
 
     app.Run();
