@@ -16,6 +16,7 @@
 
     <PackageReference Include="MMLib.SwaggerForOcelot" Version="8.1.0" />
     <PackageReference Include="Ocelot" Version="22.0.1" />
+    <ProjectReference Include="..\CommonLibrary\CommonLibrary.csproj" />
   </ItemGroup>
 
 </Project>
