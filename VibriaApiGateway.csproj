@@ -18,4 +18,8 @@
     <PackageReference Include="Ocelot" Version="22.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLibrary\CommonLibrary.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,3 +1,5 @@
+using CommonLibrary.Common.Constant;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Serilog;
@@ -13,11 +15,12 @@ Log.Logger = new LoggerConfiguration()
 try
 {
     var builder = WebApplication.CreateBuilder(args);
+    builder.Services.AddEndpointsApiExplorer();
     builder.WebHost.ConfigureKestrel(serverOptions =>
     {
         serverOptions.Limits.MaxRequestBodySize = 209715200; // 200 MB
     });
-    builder.Services.AddEndpointsApiExplorer();
+    
 
 
     var basePath = Environment.GetEnvironmentVariable("BASE_PATH") ??
@@ -32,10 +35,28 @@ try
             .AddEnvironmentVariables()
             .Build();
 
+    builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("AllowGatewayCors", policy =>
+        {
+            policy
+                .AllowAnyOrigin()      // or .WithOrigins("https://yourdomain.com")
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+    });
 
     builder.Services.AddOcelot(configuration);
     builder.Services.AddSwaggerForOcelot(configuration);
 
+    var corsBuilder = new CorsPolicyBuilder();
+    if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development")
+    {
+        corsBuilder.AllowAnyOrigin();
+    }
+    corsBuilder.AllowAnyHeader();
+    corsBuilder.AllowAnyMethod();
+    builder.Services.AddCors(x => x.AddPolicy(Literals.CorsPolicy, corsBuilder.Build()));
 
     builder.Host.UseSerilog((context, loggerConfiguration) =>
     {
@@ -64,9 +85,9 @@ try
         });
     }
 
-    app.UseAuthentication(); 
-    app.UseAuthorization(); 
-
+    app.UseAuthentication();
+    app.UseAuthorization();
+    app.UseCors("AllowGatewayCors");
     app.UseOcelot().Wait();
 
     app.Run();
