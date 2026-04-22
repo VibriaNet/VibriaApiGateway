@@ -1792,6 +1792,38 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/vibria-net/api/v1/whatsapp-otp",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/vibria-net/api/v1/whatsapp-otp",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/callback/whatsapp/oneroute",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/callback/whatsapp/oneroute",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/api/subscriber/broadcast",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/subscriber/broadcast",
