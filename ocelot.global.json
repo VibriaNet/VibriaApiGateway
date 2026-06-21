@@ -1776,6 +1776,22 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/vibria-net/api/v1/webhook/dlr/esendex/failed",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/vibria-net/api/v1/webhook/dlr/esendex/failed",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vibria-sms-subscriber-api",
+          "Port": 5062
+        }
+      ],
+      "SwaggerKey": "vibria-sms-subscriber-api",
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {Token}"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/vibria-net/api/v1/webhook/dlr/sleeng",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/vibria-net/api/v1/webhook/dlr/sleeng",
